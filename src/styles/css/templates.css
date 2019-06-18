@@ -1,0 +1,19 @@
+.input-temp {
+  height: 40px; }
+
+.button-temp {
+  transition: 0.3s ease;
+  padding: 10px 22px;
+  border: 2px solid; }
+  .button-temp.gray {
+    border-color: #8e8e8e;
+    color: #8e8e8e; }
+    .button-temp.gray:hover {
+      background-color: #8e8e8e;
+      color: #fff; }
+  .button-temp.blue {
+    border-color: #2577d4;
+    color: #2577d4; }
+    .button-temp.blue:hover {
+      background-color: #2577d4;
+      color: #fff; }

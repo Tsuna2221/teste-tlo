@@ -1,0 +1,30 @@
+$btn-gray-color: #8e8e8e;
+$btn-blue-color: #2577d4;
+
+.input-temp{
+    height: 40px;
+}
+
+.button-temp{
+    transition: 0.3s ease;
+    padding: 10px 22px;
+    border: 2px solid;
+
+    &.gray{
+        border-color: $btn-gray-color;
+        color: $btn-gray-color;
+        &:hover{
+            background-color: $btn-gray-color;
+            color: #fff;
+        }
+    }
+    
+    &.blue{
+        border-color: $btn-blue-color;
+        color: $btn-blue-color;
+        &:hover{
+            background-color: $btn-blue-color;
+            color: #fff;
+        }
+    }
+}
