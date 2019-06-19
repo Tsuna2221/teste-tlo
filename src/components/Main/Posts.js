@@ -55,7 +55,7 @@ class Posts extends Component {
         let { posts } = this.state
 
         return posts.map(({data}) => {
-            return <PostCell data={data}/>
+            return <PostCell key={data.id} data={data}/>
         })
     }
 }

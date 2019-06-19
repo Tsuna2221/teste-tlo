@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 
 //Partials
 import { decodeCookie } from '../Partials/HandleCookies'

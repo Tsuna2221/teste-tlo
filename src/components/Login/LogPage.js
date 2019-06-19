@@ -1,20 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 //Components
 import LoginForm from './LogForm'
 
-class LogPage extends Component {
-    render() {
-        return (
-            <div className='LogPage ch-max-view bg-blue'>
-                <LoginForm/>
-            </div>
-        );
-    }
-
-    state = {
-
-    }
-}
+const LogPage = () => (
+    <div className='LogPage ch-max-view bg-blue'>
+        <LoginForm/>
+    </div>
+)
 
 export default LogPage;
