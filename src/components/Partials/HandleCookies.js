@@ -1,7 +1,10 @@
 import Cookies from 'js-cookie'
+import jwt from 'jsonwebtoken'
 
 const setCookie = (name, data, minutes) => Cookies.set(name, data, { expires: (1 / 1440) * minutes })
 
 const getCookie = (name) => Cookies.get(name)
 
-export { setCookie, getCookie }
+const decodeCookie = (name) => jwt.decode(getCookie(name))
+
+export { setCookie, getCookie, decodeCookie }

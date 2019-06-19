@@ -1,14 +1,19 @@
 .bg-blue {
-  background-color: #2577d4; }
+  background-color: #0755ca; }
 
 .bg-white {
   background-color: #fff; }
 
-.c-blue {
-  color: #2577d4; }
+.c-blue, .tc-blue:hover {
+  color: #0755ca; }
 
 .c-failed {
   color: #ff4d4d; }
 
 .c-success {
   color: #20c70a; }
+
+.tc-blue {
+  transition: 0.2s ease; }
+  .tc-blue:hover {
+    text-decoration: underline; }

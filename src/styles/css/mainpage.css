@@ -1,0 +1,18 @@
+.Header {
+  height: 60px;
+  justify-content: space-between; }
+
+.Posts {
+  width: 80vw; }
+
+.post-cell {
+  background-color: #ececec;
+  width: 250px;
+  height: auto; }
+  .post-cell .image-container {
+    width: inherit;
+    height: 200px; }
+    .post-cell .image-container img {
+      max-width: -webkit-fill-available;
+      max-height: -webkit-fill-available;
+      margin: 0 auto; }

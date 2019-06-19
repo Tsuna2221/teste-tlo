@@ -1,12 +1,21 @@
-.bg-blue{background-color: #2577d4;}
+.bg-blue{background-color: #0755ca;}
 
 .bg-white{background-color: #fff;}
 
 
 //Text
 
-.c-blue{color: #2577d4;}
+.c-blue{color: #0755ca;}
 
 .c-failed{color: #ff4d4d;}
 
 .c-success{color: #20c70a;}
+
+.tc-blue{
+    transition: 0.2s ease;
+    
+    &:hover{
+        @extend .c-blue;
+        text-decoration: underline;
+    }
+}
