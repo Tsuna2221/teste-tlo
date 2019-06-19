@@ -1,5 +1,5 @@
 import React from 'react';
-import { decodeCookie } from '../Partials/HandleCookies'
+import { decodeCookie, removeCookie } from '../Partials/HandleCookies'
 
 const { email } = decodeCookie('user') ? decodeCookie('user') : {}
 
@@ -16,7 +16,7 @@ const Header = () => (
         </ul>
         {
             email ? 
-                <span className="w-medium s-13 c-white">Logged as: {email}</span>
+                <span className="w-medium s-13 c-white">Logged as: {email} | <a onClick={removeCookie('user')} href="/login" className="w-medium s-13 c-white">Log Out</a></span>
             :
                 <a href="/login" className="w-medium s-13 c-white">Log In</a>
         }

@@ -5,6 +5,8 @@ const setCookie = (name, data, minutes) => Cookies.set(name, data, { expires: (1
 
 const getCookie = (name) => Cookies.get(name)
 
+const removeCookie = (name) => Cookies.remove(name)
+
 const decodeCookie = (name) => jwt.decode(getCookie(name))
 
-export { setCookie, getCookie, decodeCookie }
+export { setCookie, getCookie, decodeCookie, removeCookie }
