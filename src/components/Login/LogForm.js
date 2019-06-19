@@ -7,7 +7,7 @@ import ButtonTemp from '../Templates/ButtonTemp'
 
 //Partial
 import { validate } from '../Partials/FormValidation'
-import { setCookie } from '../Partials/HandleCookies'
+import { setCookie, decodeCookie } from '../Partials/HandleCookies'
 
 class LoginForm extends Component {
     render() {
@@ -39,6 +39,8 @@ class LoginForm extends Component {
         message: {},
         form: {}
     }
+
+    componentDidMount = () => decodeCookie('user') ? window.location.href = '/' : null
 
     handleInput = ({target: { value, name }}) => this.setState({form: {...this.state.form, [name]: value}})
 
